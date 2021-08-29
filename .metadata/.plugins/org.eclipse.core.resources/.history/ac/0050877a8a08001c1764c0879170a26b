@@ -1,0 +1,11 @@
+package com.example.restapiservice.entities;
+
+public class Author {
+	
+	private long authorId;
+	private String firstName;
+	private String language;
+	
+	
+
+}

@@ -1,0 +1,52 @@
+package com.example.restapiservice.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.restapiservice.entities.Author;
+import com.example.restapiservice.entities.Book;
+import com.example.restapiservice.repositories.AuthorRepository;
+import com.example.restapiservice.repositories.BookRepository;
+
+public class AuthorServiceImpl implements AuthorService{
+
+	@Autowired
+	AuthorRepository repository;
+	@Override
+	public Author createAuthor(Author c) {
+		// TODO Auto-generated method stub
+		Author b = this.repository.save(c);
+		return b;
+	}
+
+	@Override
+	public Author updateAuthor(Author c) {
+		// TODO Auto-generated method stub
+		Author b = this.repository.save(c);
+		return b;
+	}
+
+	@Override
+	public List<Author> getAllBook() {
+		// TODO Auto-generated method stub
+		List<Book> b = this.repository.findAll();
+		return b;
+	}
+
+	@Override
+	public Author getBookById(long id) {
+		// TODO Auto-generated method stub
+		Author b = this.repository.getById(id);
+		return b;
+	}
+
+	@Override
+	public void deleteBook(long id) {
+		// TODO Auto-generated method stub
+		this.repository.deleteById(id);
+		
+	}
+
+	
+}

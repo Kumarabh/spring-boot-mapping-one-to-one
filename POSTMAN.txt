@@ -1,0 +1,46 @@
+CREATE A BOOK:    http://localhost:9091/books
+{
+	"bookId": "1",
+	"title": "Book - 1",
+    "author": {
+    	"authorId": "1",
+    	"firstName":"author-1",
+    	"lastName": "author-1",
+    	"language": "en-us"
+    }
+    
+
+}
+-------------------------------------------
+UPDATE A BOOK:    http://localhost:9091/books
+{
+        "bookId": 19,
+        "title": "Book - 2",
+        "author": {
+            "authorId": 16,
+            "firstName": "author-1",
+            "lastName": "author-1",
+            "language": "en-us"
+        }
+}
+
+-------------------------------------------
+GET ALL books
+
+http://localhost:9091/books
+
+
+-------------------------------------------
+
+GET ONE books
+
+http://localhost:9091/books/17
+-------------------------------------------
+
+DELETE ONE books
+
+http://localhost:9091/books/17
+
+
+
+

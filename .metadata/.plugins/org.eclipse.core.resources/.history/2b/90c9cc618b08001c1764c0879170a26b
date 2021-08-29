@@ -1,0 +1,5 @@
+package com.example.restapiservice.services;
+
+public class BookServiceImpl {
+
+}
